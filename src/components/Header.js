@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { NavContext } from '../context/NavContext';
 import styles from '../styles/Header.module.css'
-
+import logo from "../images/logo.png";
 const Header = () => {
   const { activeLinkId } = useContext(NavContext);
 
-  const navLinks = ["Home", "Destinations", "Hotels", "Flights", "Bookings"];
+  const navLinks = ["Home", "Destinations", "Hotels", "Flights","Bookings"];
   const handleClickLogo = () => {
     document.getElementById("homeSection").scrollIntoView({ behavior: "smooth" })
   }
@@ -33,7 +33,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.navContainer}>
-          <h1 onClick={handleClickLogo}>Jadoo</h1>
+          <img style={ {width:"4%"}} onClick={handleClickLogo} src={ logo} />
           <nav>
             {navLinks.map(nav => renderNavLink(nav))}
           </nav>

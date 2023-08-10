@@ -5,6 +5,7 @@ import Flights from "./sections/Flights";
 import Home from "./sections/Home";
 import Hotels from "./sections/Hotels";
 import NavProvider from './context/NavContext'
+import Footer from './sections/Footer'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Flights />
         <Bookings />
       </NavProvider>
+      <Footer />
     </div>
   );
 }
