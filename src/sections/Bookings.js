@@ -1,5 +1,4 @@
 import { useNav } from "../hooks/useNav"
-import Card from "react-bootstrap/Card";
 const Bookings = () => {
   const bookingRef = useNav("Bookings")
 
